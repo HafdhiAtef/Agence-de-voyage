@@ -5,7 +5,7 @@ This project is created to get experience on **Microservices With Netflix OSS**.
 https://docs.google.com/presentation/d/1kgkP3VaAijRl-Jf7nJnpFW5NeAY_9VVWWRWMW1aGgW4/edit?usp=sharing
 
 
-## There are four microservices:
+## There are six microservices:
 
 - **Client-service** : This microservice is responsible for managing clients. An account is a client.
     .                   URI for gateway : *http://localhost:8082*
@@ -17,7 +17,12 @@ https://docs.google.com/presentation/d/1kgkP3VaAijRl-Jf7nJnpFW5NeAY_9VVWWRWMW1aG
     .                   URI for gateway : *http://localhost:8084*
     .                   URI for H2 database : *http://localhost:8084/h2*
      .                                  H2 connect link :  *./Database/Data/Reclamation*
-                       
+
+
+- **Vol-service** : This microservice is responsible for managing flights. a client will be able to consult flights in order to make a reservation.
+    .                   URI for gateway : *http://localhost:8085*
+    .                   URI for H2 database : *http://localhost:8085/h2*
+     .                                  H2 connect link :  *./Database/Data/Vols*
                        
                        
              
