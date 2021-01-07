@@ -23,7 +23,14 @@ https://docs.google.com/presentation/d/1kgkP3VaAijRl-Jf7nJnpFW5NeAY_9VVWWRWMW1aG
     .                   URI for gateway : *http://localhost:8085*
     .                   URI for H2 database : *http://localhost:8085/h2*
      .                                  H2 connect link :  *./Database/Data/Vols*
-                       
+ 
+ 
+ 
+ - **reservation-service** : This microservice is responsible for managing reservations. a client will be able to choose an accomodation and a flight (departure and return dates).
+    .                   URI for gateway : *http://localhost:8086*
+    .                   URI for H2 database : *http://localhost:8086/h2*
+     .                                  H2 connect link :  *./Database/Data/reservation*
+ 
                        
              
  **Netflix Eureka** is used for managing instances             
