@@ -1,4 +1,4 @@
-package com.esprit.av.vol;
+package hebergement;
 
 import java.util.List;
 
@@ -17,16 +17,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-
-
 @RestController
-@RequestMapping(value = "/api/vols")
-public class VolRestAPI {
+@RequestMapping(value = "/api/hebergements")
+public class HebergementRestAPI {
 	
-	private String title="Hello , I'm the vol Microservice";
+private String title="Hello , I'm the hebergement Microservice";
 	
     @Autowired
-	private VolService volService;
+	private HebergementService hebergementService;
 	
 	
 	@RequestMapping("/hello")
@@ -38,29 +36,29 @@ public class VolRestAPI {
 	
 	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.CREATED)
-	public ResponseEntity<Vol> createVol(@RequestBody Vol vol) {
-		return new ResponseEntity<>(volService.addVol(vol), HttpStatus.OK);
+	public ResponseEntity<Hebergement> createHebergement(@RequestBody Hebergement hebergement) {
+		return new ResponseEntity<>(hebergementService.addHebergement(hebergement), HttpStatus.OK);
 	}
 	
 	@GetMapping("/retrieve-reservations")
 	@ResponseBody
-	public List<Vol> getReservations() {
-		List<Vol>  list =  volService.retrieveAllReservations(); 
+	public List<Hebergement> getReservations() {
+		List<Hebergement>  list =  hebergementService.retrieveAllReservations(); 
 		return list;
 	}
 	
 	
 	@PutMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<Vol> updateCandidat(@PathVariable(value = "id") int id, @RequestBody Vol vol){
-		return new ResponseEntity<>(volService.updateVol(id, vol), HttpStatus.OK);
+    public ResponseEntity<Hebergement> updateCandidat(@PathVariable(value = "id") int id, @RequestBody Hebergement hebergement){
+		return new ResponseEntity<>(hebergementService.updateHebergement(id, hebergement), HttpStatus.OK);
 	}
 	
 	
 	@DeleteMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<String> deleteVol(@PathVariable(value = "id") int id){
-		return new ResponseEntity<>(volService.deleteVol(id), HttpStatus.OK);
+    public ResponseEntity<String> deleteHebergement(@PathVariable(value = "id") int id){
+		return new ResponseEntity<>(hebergementService.deleteHebergement(id), HttpStatus.OK);
 	}
 
 }
