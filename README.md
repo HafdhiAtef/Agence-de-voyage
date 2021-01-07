@@ -35,14 +35,14 @@ https://docs.google.com/presentation/d/1kgkP3VaAijRl-Jf7nJnpFW5NeAY_9VVWWRWMW1aG
 
 
 ## Docker : 
-    -used Docker Desktop for Windows .
-    - each microservice has his own docker file , to create docker image , 
-    first excute this command  in cmd under each micro service directory "docker build -t image_name . "    . is to search and execute the docker file in current directory 
-    - to run an image " docker run -p   port_desired:port_of_your_micro_service  image_name 
-    -list images : docker image ls 
-    -list containers : docker container ps 
-    -delete container/image : docker image/container rm image/container ID 
-    -AS for docker compose , 07/01/2021 , zuul is udner maintenance , so there won't be any need to use docker compose to orchestrate the micro services .
+   -used Docker Desktop for Windows .
+   - each microservice has his own docker file , to create docker image , 
+   first excute this command  in cmd under each micro service directory "docker build -t image_name . "    . is to search and execute the docker file in current directory 
+   - to run an image " docker run -p   port_desired:port_of_your_micro_service  image_name 
+   -list images : docker image ls 
+   -list containers : docker container ps 
+   -delete container/image : docker image/container rm image/container ID 
+   -AS for docker compose , 07/01/2021 , zuul is udner maintenance , so there won't be any need to use docker compose to orchestrate the micro services .
 
 
 
