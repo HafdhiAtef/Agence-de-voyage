@@ -16,7 +16,7 @@ https://docs.google.com/presentation/d/1kgkP3VaAijRl-Jf7nJnpFW5NeAY_9VVWWRWMW1aG
 - **Reclamation-service** : This microservice is responsible for managing reclamations. a client will be able to fill a reclamation.
     .                   URI for gateway : *http://localhost:8084*
     .                   URI for H2 database : *http://localhost:8084/h2*
-                                       H2 connect link :  *./Database/Data/Reclamation*
+     .                                  H2 connect link :  *./Database/Data/Reclamation*
                        
                        
                        
