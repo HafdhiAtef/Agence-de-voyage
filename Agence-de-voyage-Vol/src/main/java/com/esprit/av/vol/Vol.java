@@ -17,7 +17,7 @@ public class Vol implements Serializable {
 	@Id
 	@GeneratedValue
 	private int id_vol;
-	private String compagnie_aerienne, départ, destination, date_depart, date_arrivee;
+	private String compagnie_aerienne, depart, destination, date_depart, date_arrivee;
 	private int duree;
 	private String classe;
 	private int Tarif;
@@ -35,7 +35,7 @@ public class Vol implements Serializable {
 			String date_arrivee, int duree, String classe, int tarif) {
 		super();
 		this.compagnie_aerienne = compagnie_aerienne;
-		this.départ = départ;
+		this.depart = depart;
 		this.destination = destination;
 		this.date_depart = date_depart;
 		this.date_arrivee = date_arrivee;
@@ -49,7 +49,7 @@ public class Vol implements Serializable {
 		super();
 		this.id_vol = id_vol;
 		this.compagnie_aerienne = compagnie_aerienne;
-		this.départ = départ;
+		this.depart = départ;
 		this.destination = destination;
 		this.date_depart = date_depart;
 		this.date_arrivee = date_arrivee;
@@ -75,11 +75,11 @@ public class Vol implements Serializable {
 	}
 
 	public String getDépart() {
-		return départ;
+		return depart;
 	}
 
 	public void setDépart(String départ) {
-		this.départ = départ;
+		this.depart = départ;
 	}
 
 	public String getDestination() {
@@ -158,7 +158,7 @@ public class Vol implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Vol [id_vol=" + id_vol + ", compagnie_aerienne=" + compagnie_aerienne + ", départ=" + départ
+		return "Vol [id_vol=" + id_vol + ", compagnie_aerienne=" + compagnie_aerienne + ", départ=" + depart
 				+ ", destination=" + destination + ", date_depart=" + date_depart + ", date_arrivee=" + date_arrivee
 				+ ", duree=" + duree + ", classe=" + classe + ", Tarif=" + Tarif + "]";
 	}
