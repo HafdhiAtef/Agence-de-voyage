@@ -5,7 +5,7 @@ This project is created to get experience on **Microservices With Netflix OSS**.
 https://docs.google.com/presentation/d/1kgkP3VaAijRl-Jf7nJnpFW5NeAY_9VVWWRWMW1aGgW4/edit?usp=sharing
 
 
-## There are eight microservices:
+## There are seven microservices:
 
 - **Client-service** : This microservice is responsible for managing clients. An account is a client.
     .                   URI for gateway : *http://localhost:8082*
@@ -42,7 +42,7 @@ https://docs.google.com/presentation/d/1kgkP3VaAijRl-Jf7nJnpFW5NeAY_9VVWWRWMW1aG
     .                   URI for eureka : *http://localhost:8761*
 
 
-- **Netflix Ribbon** is used for client side load-balancing.
+
 - **Netflix Zuul** is used for gateway(07/01/2021 : netflix-zuul is under maintenance , therefore we wont be able to excute the zuul gateway).
 
 
